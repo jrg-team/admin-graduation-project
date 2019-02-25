@@ -2,6 +2,7 @@
   "name": "admin-graduation-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jrg-team.github.io/admin-graduation-project",
   "dependencies": {
     "antd": "^3.13.5",
     "axios": "^0.18.0",
@@ -14,7 +15,9 @@
     "start": "react-scripts-ts-antd start",
     "build": "react-scripts-ts-antd build",
     "test": "react-scripts-ts-antd test --env=jsdom",
-    "eject": "react-scripts-ts-antd eject"
+    "eject": "react-scripts-ts-antd eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/jest": "^24.0.6",
@@ -22,6 +25,7 @@
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.2",
     "@types/react-router-dom": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "typescript": "^3.3.3333"
   }
 }
