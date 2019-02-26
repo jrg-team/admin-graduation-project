@@ -4,7 +4,7 @@ let apiPrefix:string = '';
 if(ENV === 'development'){
 	apiPrefix = '//localhost:3000';
 }else if(ENV === 'production'){
-	apiPrefix = '//xiedaimala.com';
+	apiPrefix = '//gp-server.hunger-valley.com';
 }
 
 export default apiPrefix
