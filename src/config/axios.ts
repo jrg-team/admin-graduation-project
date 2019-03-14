@@ -1,5 +1,6 @@
 import axios from 'axios'
 import apiPrefix from './api-prefix'
+import History from './history'
 /* tslint:disable:no-string-literal */
 
 const instance = axios.create({
@@ -9,7 +10,7 @@ const instance = axios.create({
 });
 
 const signIn = () => {
-	window.location.href = ('/login')
+	History.push('/login');	
 }
 
 instance.interceptors.request.use(
